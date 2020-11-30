@@ -480,60 +480,6 @@
 			</div>
 
 			<p></p>
-			<div id="info" class="fullcolumn columnfade">
-				<center>
-					<div class="infoblob" align="left">
-						<span data-translate="info-blob">
-							<h2>What is OBS.Ninja</h2>
-							<br />
-							<li>100% 
-								<b>free</b>; no downloads; no personal data collection; no sign-in
-							</li>
-							<li>Bring video from your smartphone, computer, or friends directly into your OBS video stream</li>
-							<li>We use cutting edge Peer-to-Peer forwarding technology that offers privacy and ultra-low latency</li>
-							<br />
-							<li>Youtube video 
-								<i class="lab la-youtube"></i>
-								<a href="https://www.youtube.com/watch?v=6R_sQKxFAhg">Demoing it here</a>
-							</li>
-							<br />
-							<i>
-								<font style="color: red;">Known issues:</font>
-							</i>
-							<br />
-							<li>
-								<a href="https://github.com/steveseguin/obsninja/wiki/FAQ#mac-os">MacOS <i class="lab la-apple"></i> users</a> will need to use OBS v23 or resort to
-								<a href="https://github.com/steveseguin/electroncapture">Window Capturing</a> with the provided Electron-Capture app for the time being.
-                            
-							</li>
-							<li>If you have	<a href="https://github.com/steveseguin/obsninja/wiki/FAQ#video-is-pixelated">"pixel smearing"</a> or corrupted video, try adding <b>&codec=vp9</b> or &codec=h264 to the OBS view link. Using Wi-Fi will make the issue worse.
-							</li>
-							<li>
-								iOS devices may have occasional audio or camera issues, such as no sound. Fully close Safari and reopen it if nothing else seems to work.
-							</li>
-							<li>
-								The VP9 codec on Chromium-based browsers seems to lag when screen-sharing at the moment. Use the OBS Virtual Camera as a capture source instead.
-							</li>
-							<br />
-
-                            🎈 Site Updated: <a href="https://www.reddit.com/r/OBSNinja/comments/k02enh/version_134_of_obsninja_released_change_log_here/">November 24th, 2020</a>. The previous version can be found at 
-							<a href="https://obs.ninja/v12/">https://obs.ninja/v12/</a> if you are having new issues.
-
-							<br />
-							<br />
-							<h3>
-								<i>
-                                    Check out the 
-									<a href="https://www.reddit.com/r/OBSNinja/">sub-reddit
-									<i class="lab la-reddit-alien"></i> </a>for help and see the <a href="https://github.com/steveseguin/obsninja/wiki/">Wiki for advanced info</a>. I'm also on
-									<a href="https://discord.gg/T4xpQVv">Discord</a> and you can email me at steve@seguin.email
-                                
-								</i>
-							</h3>
-						</span>
-					</div>
-				</center>
-			</div>
 			<form method="post" onsubmit="setFormSubmitting()" style="display: none;">
 				<input type="submit" />
 			</form>
@@ -655,34 +601,7 @@
 				<span id="miniPerformer"><button id="press2talk" class="grey" onclick="press2talk();"><i class="las la-headset"></i><span data-translate="push-to-talk-enable"> Enable Director's Push-to-Talk Mode</span></button></span>
 			</div>
 
-			<div id='roomnotes2' style='max-width:1200px;display:none;padding:0 0 0 10px;' >
-				<font style='color:#CCC;' data-translate='welcome-to-control-room'>
-					<b>Welcome. This is the director's control-room for the group-chat.</b><br /><br />
-					You can host a group chat with friends using a room. Share the blue link to invite guests who will join the chat automatically.
-					<br /><br />
-					<font style='color:red'>Known Limitations with Group Rooms:</font><br />
-					<li>A group room can handle up to around 30 guests, depending on numerous factors, including CPU and available bandwidth of all guests in the room. To achieve more than around 7-guests though, you will likely want to disable video sharing between guests. &roombitrate=0 or &novideo are options there.</li>
-					
-					<li>Videos will appear of low quality on purpose for guests and director; this is to save bandwidth and CPU resources. It will be high-quality within OBS still though.</li>
-					
-					<li>The state of the scenes, such as which videos are active in a scene, are lost when the director resets the control-room or the scene.</li>
-					<br />
-					Further Notes:<br /><br />
-					<li>Links to Solo-views of each guest video are offered under videos as they load. These can be used within an OBS Browser Source.</li>
-					<li>You can use the auto-mixing Group Scenes, the green links, to auto arrange multiple videos for you in OBS.</li>
-					<li>You can use this control room to record isolated video or audio streams, but it is an experimental feature still.</li>
-					<li>If you transfer a guest from one room to another, they won't know which room they have been transferred to.</li>
-					<li>OBS will see a guest's video in high-quality; the default video bitrate is 2500kbps. Setting higher bitrates will improve motion.</li>
-					<li>VP8 is typically the default video codec, but using &codec=vp9 or &codec=h264 as a URL in OBS can help to reduce corrupted video puke issues.</li>
-					<li>&stereo=2 can be added to guests to turn off audio effects, such as echo cancellation and noise-reduction.</li>
-					<li>https://invite.cam is a free service provided that can help obfuscuate the URL parameters of an invite link given to guests.</li>
-					<li>Adding &showonly=SOME_OBS_VIRTUALCAM to the guest invite links allows for only a single video to be seen by the guests; this can be output of the OBS Virtual Camera for example</li>
-					<br />
-					
-					For advanced URL options and parameters, <a href="https://github.com/steveseguin/obsninja/wiki/Advanced-Settings">see the Wiki.</a>
-				</font>
-			</div>
-
+		
 			<div id='guestFeeds'><div id='deleteme'>
 				<div class='vidcon' style='margin: 15px 20px 0 0; min-height: 300px;text-align: center;'><h2>Guest 1</h2><i class='las la-user-circle' style='font-size:8em; margin: 20px 0px;' aria-hidden='true'></i></div>
 				<div class='vidcon' style='margin: 15px 20px 0 0; min-height: 300px;text-align: center;'><h2>Guest 2</h2><i class='las la-user-circle' style='font-size:8em; margin: 20px 0px;' aria-hidden='true'></i></div>
@@ -713,41 +632,7 @@
 			<!-- This image is used when dragging elements -->
 			<img src="./images/favicon-32x32.png" id="dragImage" />
 		</div>
-		<div id="messagePopup" class="popup-message"></div>
-		<div id="languages" class="popup-message" style="display: none; right: 0; bottom: 25px; position: absolute;">
-			<b  data-translate='available-languages'>Available Languages:</b>
-			<br />
-			<u>
-				<a onclick="changeLg('ru');toggle(document.getElementById('languages'));" style="cursor: pointer;">Russian</a>
-				<br />
-				<a onclick="changeLg('fr');toggle(document.getElementById('languages'));" style="cursor: pointer;">French</a>
-				<br />
-				<a onclick="changeLg('en');toggle(document.getElementById('languages'));" style="cursor: pointer;">English</a>
-				<br />
-				<a onclick="changeLg('pt');toggle(document.getElementById('languages'));" style="cursor: pointer;">Portuguese</a>
-				<br />
-				<a onclick="changeLg('it');toggle(document.getElementById('languages'));" style="cursor: pointer;">Italian</a>
-				<br />
-				<a onclick="changeLg('de');toggle(document.getElementById('languages'));" style="cursor: pointer;">German</a>
-				<br />
-				<a onclick="changeLg('es');toggle(document.getElementById('languages'));" style="cursor: pointer;">Spanish</a>
-				<br />
-				<a onclick="changeLg('nl');toggle(document.getElementById('languages'));" style="cursor: pointer;">Dutch</a>
-				<br />
-				<a onclick="changeLg('tr');toggle(document.getElementById('languages'));" style="cursor: pointer;">Turkish</a>
-				<br />
-				<a onclick="changeLg('ja');toggle(document.getElementById('languages'));" style="cursor: pointer;">Japanese</a>
-				<br />
-				<a onclick="changeLg('cs');toggle(document.getElementById('languages'));" style="cursor: pointer;">Czech </a>
-				<br />
-				<a onclick="changeLg('pig');toggle(document.getElementById('languages'));" style="cursor: pointer;">Pig Latin</a>
-				<br />
-			</u>
-			<br />
-			<a href="https://github.com/steveseguin/obsninja/tree/master/translations"  data-translate='add-more-here'>Add More Here!</a>
-			<br />
-		</div>
-		
+				
 		<script>
 		
             var session = WebRTC.Media; // session is a required global variable if configuring manually. Run before loading main.js but after webrtc.js.
