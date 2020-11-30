@@ -65,45 +65,6 @@
 		<script  type="text/javascript" crossorigin="anonymous"  src="./thirdparty/CodecsHandler.js?ver=22"></script>
 		<script  type="text/javascript" crossorigin="anonymous" src="./webrtc.js?ver=118"></script>
 		<input id="zoomSlider" type="range" style="display: none;" />
-		<div id="header">
-			<a id="logoname" href="./" style="text-decoration: none; color: white; margin: 2px;">
-				<span data-translate="logo-header">
-					<font id="qos">O</font>BS.Ninja 
-				</span>
-			</a>
-			<div id="head1" style="display: inline-block; padding:1px; position: relative;">
-				<input id="joinroomID" name="joinroomID" size="22" placeholder="Join by Room Name here" />
-				<button onclick="jumptoroom();">GO</button>
-			</div>
-			<div id="head3" style="display: inline-block;" class="advanced">
-				<font style="color: #888;" id="copythisurl"> &nbsp; 
-					<span data-translate="copy-this-url">Copy this URL into an OBS "Browser Source"</span> <i style="color: #CCC;" class="las la-long-arrow-alt-right"></i> &nbsp; 
-				</font>
-				<a
-                    id="reshare"
-                    data-drag="1"
-                    onclick="popupMessage(event);copyFunction(this)"
-                    class="task grabLinks"
-                    onmousedown="copyFunction(this)"
-                    style="font-weight: bold; color: #afa !important; cursor: grab; background-color: #0000;  font-size: 115%; min-width: 335px; max-width: 800px;"
-                ></a>
-				<i class="las la-paperclip" style="color: #DDD;" onclick="popupMessage(event);copyFunction(document.getElementById('reshare'));" onmouseover="this.style.cursor='pointer'"></i>
-			</div>
-			<div id="head4" style="display: inline-block;" class="advanced">
-				<font style="font-size: 68%; color: white;">
-                    &nbsp; 
-					<span data-translate="you-are-in-the-control-center">Control center for room:</span>
-                    
-					<div id="dirroomid" style="font-size: 140%; color: #99c; display: inline-block;"></div>
-				</font>
-			</div>
-			<div id="head2" class="advanced" style="display: inline-block; text-decoration: none; font-size: 60%; color: white;">
-				<span data-translate="joining-room">You are joining room</span>:
-                
-				<div id="roomid" style="display: inline-block;"></div>
-			</div>
-			
-		</div>
 		<div id="controlButtons" >
 			<div id="chatbutton" title="Toggle the Chat" onclick="toggleChat()" class="advanced float" style="cursor: pointer;" alt="Toggle the Chat">
 				<i id="chattoggle" class="toggleSize las la-comment-alt my-float"></i>
